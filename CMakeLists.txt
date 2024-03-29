@@ -6,8 +6,16 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
+
+set(CMAKE_C_COMPILER "clang")
+set(CMAKE_CXX_COMPILER "clang++")
+
+
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set(QT_DIR "/opt/homebrew/Cellar/qt@5/5.15.13/lib/cmake/Qt5")
+set(Qt5_DIR "/opt/homebrew/Cellar/qt@5/5.15.13/lib/cmake/Qt5")
 
 find_package(QT NAMES Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt5 REQUIRED COMPONENTS Widgets)
@@ -30,4 +38,4 @@ set(GUI_SRC
 
 add_executable(BeerDB ${GUI_SRC} ${DB_SRC})
 
-target_link_libraries(BeerDB PRIVATE Qt${QT_VERSION_MAJOR}::Widgets stdc++fs pthread)
+target_link_libraries(BeerDB PRIVATE Qt${QT_VERSION_MAJOR}::Widgets pthread)

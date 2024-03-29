@@ -15,11 +15,11 @@ MainWindow::MainWindow(QWidget* parent)
 
   ui->plainTextEdit
       ->setStyleSheet(
-          "background-image:url(\"/home/gannemar/BeerDB/BeerDB/img/lager-beer.png\"); background-position: center;");
+          "background-image:url(\"/Users/jinfuumugen/dev/BeerDB/img/lager-beer.png\"); background-position: center;");
 
   ui->textBrowser
       ->setStyleSheet(
-          "background-image:url(\"/home/gannemar/BeerDB/BeerDB/img/el.png\"); background-position: center; opacity: 127;");
+          "background-image:url(\"/Users/jinfuumugen/dev/BeerDB/img/el.png\"); background-position: center; opacity: 127;");
 
 }
 
