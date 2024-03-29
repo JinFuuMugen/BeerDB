@@ -1,54 +1,22 @@
-# BeerDB: A Compact Database in C++
+# Educational database in C++
 
-Introduction to DBMS. Developing a simple BeerDB for your own.
-
-The russian version of the task can be found in the repository.
+This project is strongly based on BeerDB project (https://github.com/MrShelDie/BeerDB)
 
 ## Contents
 
-1. [Chapter I](#chapter-i) \
-   1.1. [Introduction](#introduction)
-2. [Chapter II](#chapter-ii) \
-   2.1. [Information](#information) \
-      2.1.1 [Database Management](#database-management) \
-      2.1.2. [Table Management](#table-management) \
-      2.1.3. [Index Management](#index-management) \
-      2.1.4. [Data Manipulation](#data-manipulation) \
-      2.1.5. [Other Features Implemented](#other-features-implemented) \
-      2.1.6. [Unimplemented Features](#unimplemented-features)
-3. [Chapter III](#chapter-iii)
+[Information](#information) \
+[Database Management](#database-management) \
+[Table Management](#table-management) \
+[Index Management](#index-management) \
+[Data Manipulation](#data-manipulation) \
+[Other Features Implemented](#other-features-implemented) \
+[TODO Features](#todo-features)
 
-## Chapter I
-
-![BeerDB](img/s21_containers.png)
-
-Planet Earth, somewhere among the massive containers in the port, October 29, 1993.
-
-*- Do you really think Bjarne will agree to add this to the standard?*
-
-*-- Sure. Moreover, he was already interested in templates a couple of years ago, but then they could not achieve sufficient reliability of the program being developed.* - said a middle-aged man in a white shirt and an HP Labs badge with the inscription "A. Stepanov."
-
-*- I saw your presentation on generalized programming. The idea is really impressive, but they wanted to release a new standard by the end of the year. This one will require a lot of adjustments...*
-
-*-- I think this is exactly what they lacked to fully finalize the new standard. Moreover, as you said, the idea is impressive. However, it does need some adjustments. To be completely confident in the success of the presentation, we need to give some examples of how to use the approach and templates in general. Are you familiar with the structure of B+ trees?*
-
-*- Yes, I think I'm beginning to understand your idea. Do you want to implement your own types of data storage?*
-
-*-- And not only that. Imagine if all the data were contained together and managed by some kind of system. How much time, effort and resources it would save! Lists, maps, sets!" - the walk along the Embarcadero embankment was clearly getting more interesting.*
-
-*- Queues and stacks... Damn it, it's brilliant.*
-
-*-- That's right. After such examples, who will refuse to add a DBMS to their company?*
-
-*- I'm in favor. We could even assemble a small team of guys who are interested in this. How much time do we have to implement these examples?*
-
-*-- So, about two weeks before the presentation meeting in San Jose..*
 
 ### Introduction
 
 As part of the project, you need to write your own program that implements the work of the DBMS and the basic standard SQL commands: `Create Database`, `Show Databases`, `Drop Database`, `Use`, `Create Table`, `Drop Table`, `Show Tables`, `Create Index`, `Drop Index`, `Drop Index`, `Insert`, `Select`, `Delete`, and `Update`. Implementations should provide a complete set of standard elements and methods for processing and indexing tables.
 
-## Chapter II
 
 ### Information
 
@@ -225,7 +193,7 @@ Syntax:  EXEC file_name;
 Example:  EXEC input.txt;
 ```
 
-#### Unimplemented Features
+#### TODO Features
 
 - Transaction Management
 - User Management
@@ -234,14 +202,3 @@ Example:  EXEC input.txt;
 - Foreign Keys
 - Views
 - Complex Select
-
-## Chapter III
-
-- The program must be developed in C++ language of C++17 standard using gcc compiler
-- The program code must be located in the src folder
-- When writing code it is necessary to follow the Google style
-- Make sure to use iterators
-- Classes must be template
-- Prepare full coverage of container classes methods with unit-tests using the GTest library
-- Copying of the Standard Template Library (STL) implementation is not allowed
-- The logic of the Standard Template Library (STL) must be followed (in terms of checks, memory handling and behaviour in abnormal situations)

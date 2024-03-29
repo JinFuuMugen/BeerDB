@@ -12,15 +12,6 @@ MainWindow::MainWindow(QWidget* parent)
   setFixedSize(
       this->geometry().width(),
       this->geometry().height());
-
-  ui->plainTextEdit
-      ->setStyleSheet(
-          "background-image:url(\"/Users/jinfuumugen/dev/BeerDB/img/lager-beer.png\"); background-position: center;");
-
-  ui->textBrowser
-      ->setStyleSheet(
-          "background-image:url(\"/Users/jinfuumugen/dev/BeerDB/img/el.png\"); background-position: center; opacity: 127;");
-
 }
 
 MainWindow& MainWindow::getMainWindow() {
